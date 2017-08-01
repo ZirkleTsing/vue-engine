@@ -1,3 +1,4 @@
+import {demo} from '../utils/proxy.js'
 //Vue类
 function Vue (options) {
   this.data = options.data
@@ -44,7 +45,7 @@ function Vue (options) {
 // 订阅者
 /**
  * 
- * @param {订阅者} vm 
+ * @param {Vue} vm 
  * @param {监听的data属性名字} name 
  */
 function Watcher (vm, name, node) {
